@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electronic Shop</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <!-- bootstrap links -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- bootstrap links -->
+  <!-- fonts links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+  <!-- fonts links -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <style>
+    /* Cards Css */
+    .card {
+      overflow: hidden;
+      transition: all 1s ease-in-out;
+    }
+
+    .card:hover {
+      background-color: #740097;
+      color: #ffc800;
+      box-shadow: 5px 5px 7px black;
+
+    }
+
+    .card-hover {
+      transition: all 0.5s ease-in-out;
+    }
+
+    .card-hover:hover {
+      transform: scale(1.1);
+    }
+
+    .card-hover-div {
+      overflow: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <section style="background-color: #BC7FCD;">
+     <!-- top navbar -->
+  <div class="top-navbar">
+    <div class="row g-0 px-3 pt-2">
+      <div class="col-6 d-flex justify-content-start align-items-center">
+        <p>WELCOME TO OUR SHOP</p>
+      </div>
+      <div class="col-6 d-flex justify-content-end align-items-center">
+
+        <div class="nav-button">
+          <a href="sign.html" class="btn white-btn" id="loginbtn">Sign in
+            </a>
+            <a href="sign.html" class="btn" id="register btn">Sign up</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- top navbar -->
+ 
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg " id="navbar">
+      <div class="container " style="background-color: #740097; border-radius: 30px;">
+        <a class="navbar-brand" href="index.html" id="logo"><span id="span1">L</span>ibarty
+          <span>Electronics.</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span><img src="./images/menu.png" alt="" width="30px"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item ">
+              <a class="nav-link text-warning" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Category
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(67 0 86);">
+                <li><a class="dropdown-item" href="smart.phone.html">Samrt Phone</a></li>
+                <li><a class="dropdown-item" href="camera.html">Cameras</a></li>
+                <li><a class="dropdown-item" href="SmartWatch.html">Samrt Watch</a></li>
+                <li><a class="dropdown-item" href="HomeAppliances.html">Home Appliances</a></li>
+                <li><a class="dropdown-item" href="Asus.html">Computer Laptop</a></li>
+              </ul>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Brands
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(67 0 86);">
+                <li><a class="dropdown-item" href="smart.phone.html">SAMSUNG</a></li>
+                <li><a class="dropdown-item" href="Asus.html">ASUS</a></li>
+                <li><a class="dropdown-item" href="smart.phone.html">Apple</a></li>
+                <li><a class="dropdown-item" href="smart.phone.html">Google Pixel</a></li>
+                <li><a class="dropdown-item" href="smart.phone.html">OnePlus</a></li>
+                <li><a class="dropdown-item" href="HomeAppliances.html">Gaba National</a></li>
+                <li><a class="dropdown-item" href="HomeAppliances.html">Hair</a></li>
+                <li><a class="dropdown-item" href="camera.html">canon</a></li>
+                <li><a class="dropdown-item" href="camera.html">Nikon</a></li>
+                <li><a class="dropdown-item" href="SmartWatch.html">Louis Vuitton</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex" id="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar -->
+    <!-- banner -->
+    <div class="container-fluid " data-aos="zoom-in-up" data-aos-offset="100" data-aos-delay="50"
+      data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false"
+      data-aos-anchor-placement="top-center">
+      <div class="row">
+        <div class=" col-12 col-md-6 d-flex justify-content-center align-items-center">
+          <div>
+            <h1>
+              <span>Libartry Electronics.</span>
+              <br>
+              Up To <span id="span2">50%</span> Off
+            </h1>
+            <p>Discover the world of Electronics at our library!
+              <br>Enjoy discounts of up to 50% off on a wide range of products
+            </p>
+            <a href="HomeAppliances.html" class="btn btn-primary btnp">Shop Now</a>
+          </div>
+        </div>
+        <div class=" col-12 col-md-6">
+          <img src="images/Electronic-Gadgets-PNG-Clipart-Background.png" class="img-fluid w-100" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- banner -->
+  <!-- offer -->
+  <div class="container" id="offer">
+    <div class="row">
+      <div class="col-md-3 py-3 py-md-0">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <h3>Free Shipping</h3>
+        <p>On order over $1000</p>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <i class="fa-solid fa-rotate-left"></i>
+        <h3>Free Returns</h3>
+        <p>Within 30 days</p>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <i class="fa-solid fa-truck"></i>
+        <h3>Fast Delivery</h3>
+        <p>World Wide</p>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <i class="fa-solid fa-thumbs-up"></i>
+        <h3>Big choice</h3>
+        <p>Of products</p>
+      </div>
+    </div>
+  </div>
+  <!-- offer -->
+  <!--TRENDING CARD STARTS FROM HERE -->
+  <div class="container py-md-3" data-aos="fade-up" data-aos="fade-up" data-aos-offset="100" data-aos-delay="50"
+    data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false"
+    data-aos-anchor-placement="top-center">
+    <h3 class="pb-3">🔥Trending Products</h3>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+      <div class="col ">
+        <div class="card h-100">
+          <div class="card-hover-div">
+            <img src="./images/washing_machine-removebg-preview.png" class="card-img-top card-hover" alt="...">
+          </div>
+          <div class="card-body" style="text-align: center;">
+            <h5 class="card-title">SAMSUNG </h5>
+            <p class="card-text">Washing Machine</p>
+            <div class="star text-center">
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+            </div>
+            <a href="#" class="btn btn-primary btnd ">See More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col ">
+        <div class="card h-100">
+          <div class="card-hover-div">
+            <img src="./images/OIP__1_-removebg-preview.png" class="card-img-top card-hover" alt="...">
+          </div>
+          <div class="card-body" style="text-align: center;">
+            <h5 class="card-title">SAMSUNG</h5>
+            <p class="card-text">S24 Ultra</p>
+            <div class="star text-center">
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+            </div>
+            <a href="smart.phone.html" class="btn btn-primary btnd ">Shop Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col ">
+        <div class="card h-100">
+          <div class="card-hover-div">
+            <img src="./images/61248ab2021a397f69a5bdb837402907-removebg-preview.png" class="card-img-top card-hover"
+              alt="...">
+          </div>
+          <div class="card-body" style="text-align: center;">
+            <h5 class="card-title">ASUS</h5>
+            <p class="card-text">Gaming PC</p>
+            <div class="star text-center">
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+            </div>
+            <a href="Asus.html" class="btn btn-primary btnd ">Shop Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col ">
+        <div class="card h-100">
+          <div class="card-hover-div">
+            <img
+              src="./images/Louis_Vuitton_lancia_il_suo_primo_smartwatch_di_lusso_con_Android_Wear_2.0-removebg-preview.png"
+              class="card-img-top card-hover" alt="...">
+          </div>
+          <div class="card-body" style="text-align: center;">
+            <h5 class="card-title">Louis Vuitton</h5>
+            <p class="card-text"> Louis Vuitton lancia il suo primo smartwatch di lusso con Android Wear 2.0.png </p>
+            <div class="star text-center">
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+            </div>
+            <a href="SmartWatch.html" class="btn btn-primary btnd ">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--TRENDING CARD END HERE -->
+  <!-- other cards -->
+  <div class="container" id="other-cards">
+    <div class="row">
+      <div class="col-md-6 py-3 py-md-0">
+        <div class="card">
+          <img src="./images/c1.png" alt="">
+          <div class="card-img-overlay">
+            <h3>Best Laptop</h3>
+            <h5>Latest Collection</h5>
+            <p>Up To 50% Off</p>
+            <button id="shopnow">Shop Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 py-3 py-md-0">
+        <div class="card">
+          <img src="./images/c2.png" alt="">
+          <div class="card-img-overlay">
+            <h3>Best Headphone</h3>
+            <h5>Latest Collection</h5>
+            <p>Up To 50% Off</p>
+            <button id="shopnow">Shop Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- other cards -->
+  </section>
+  <!-- banner -->
+  <section class="banner">
+    <div class="content" data-aos="fade-up" data-aos-offset="50" data-aos-delay="50" data-aos-duration="500"
+      data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top-center">
+      <h1> <span>Electronic Gadget</span>
+        <br>
+        Up To <span id="span2">50%</span> Off
+      </h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, saepe.
+        <br>Lorem ipsum dolor sit amet consectetur.
+      </p>
+      <div class="btn">
+        <a href="HomeAppliances.html"><button>Shop Now</button></a>
+      </div>
+
+    </div>
+    <div class="img" data-aos="fade-up" data-aos-offset="50" data-aos-delay="50" data-aos-duration="500"
+      data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top-center">
+      <img src="./images/image1.png">
+    </div>
+  </section>
+  <!-- banner -->
+
+
+
+  <!--CARD STARTS FROM HERE -->
+  <div class="container py-md-3" data-aos="fade-up" data-aos="fade-up" data-aos-offset="100" data-aos-delay="50"
+    data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false"
+    data-aos-anchor-placement="top-center">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+      <div class="col ">
+        <div class="card h-100">
+          <div class="card-hover-div">
+            <img src="./images/OIP-removebg-preview.png" class="card-img-top card-hover p" alt="...">
+          </div>
+          <div class="card-body" style="text-align: center;">
+            <h5 class="card-title">HAIER </h5>
+            <p class="card-text">800W-110V Multi function Electric Juicer Machine Fruit and Vegetable Juicer</p>
+            <div class="star text-center">
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+            </div>
+            <a href="#modal1" class="btn btn-primary btnd " data-bs-toggle="modal">Add to card</a>
+          </div>
+        </div>
+      </div>
+      <div class="col ">
+        <div class="card h-100">
+          <div class="card-hover-div">
+            <img src="./images/__86-removebg-preview.png" class="card-img-top card-hover" alt="...">
+          </div>
+          <div class="card-body" style="text-align: center;">
+            <h5 class="card-title">Gaba National</h5>
+            <p class="card-text">*REDUCED* Electric roti maker rotimatic automatic roti and flat bread </p>
+            <div class="star text-center">
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+            </div>
+            <a href="#modal2" class="btn btn-primary btnd " data-bs-toggle="modal">Add to card</a>
+          </div>
+        </div>
+      </div>
+      <div class="col ">
+        <div class="card h-100">
+          <div class="card-hover-div">
+            <img src="./images/j.png" class="card-img-top card-hover" alt="...">
+          </div>
+          <div class="card-body" style="text-align: center;">
+            <h5 class="card-title">PEL</h5>
+            <p class="card-text">PEL Refrigerator Glass Door 6450 – Purple Blaze</p>
+            <div class="star text-center">
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+            </div>
+            <a href="#first" class="btn btn-primary btnd " data-bs-toggle="modal">Add to card</a>
+          </div>
+        </div>
+      </div>
+      <div class="col ">
+        <div class="card h-100">
+          <div class="card-hover-div">
+            <img src="./images/21.png" class="card-img-top card-hover" alt="...">
+          </div>
+          <div class="card-body" style="text-align: center;">
+            <h5 class="card-title">Brentwood Iron</h5>
+            <p class="card-text">Brentwood® Appliances Steam Iron With Retractable Cord</p>
+            <div class="star text-center">
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+            </div>
+            <a href="#second" class="btn btn-primary btnd " data-bs-toggle="modal">Add to card</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- CARD END HERE -->
+  <!-- other cards -->
+  <div class="container" id="other">
+    <div class="row">
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="./images/c3.png" alt="">
+          <div class="card-img-overlay">
+            <h3>Home Gadget</h3>
+            <p>Latest collection Up To 50% Off</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="./images/c4.png" alt="">
+          <div class="card-img-overlay">
+            <h3>Gaming Gadget</h3>
+            <p>Latest collection Up To 50% Off</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="./images/c5.png" alt="">
+          <div class="card-img-overlay">
+            <h3>Electronic Gadget</h3>
+            <p>Latest collection Up To 50% Off</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- other cards -->
+  <!--CARD STARTS FROM HERE -->
+  <div class="container py-md-3" data-aos="fade-up" data-aos="fade-up" data-aos-offset="100" data-aos-delay="50"
+    data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false"
+    data-aos-anchor-placement="top-center">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+      <div class="col ">
+        <div class="card h-100">
+          <div class="card-hover-div">
+            <img src="./images/dispenser-removebg-preview.png" class="card-img-top card-hover" alt="...">
+          </div>
+          <div class="card-body" style="text-align: center;">
+            <h5 class="card-title">Gaba National</h5>
+            <p class="card-text">Better Living Products Touchless Countertop Wall Mount Clear Chamber Dispenser 510 ml
+            </p>
+            <div class="star text-center">
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+            </div>
+            <a href="#" class="btn btn-primary btnd ">see More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col ">
+        <div class="card h-100">
+          <div class="card-hover-div">
+            <img src="./images/china-electric-hand-beater-white-ha961-image1-450x450-removebg-preview.png"
+              class="card-img-top card-hover" alt="...">
+          </div>
+          <div class="card-body" style="text-align: center;">
+            <h5 class="card-title">china electric</h5>
+            <p class="card-text">china electric hand beaterwhite</p>
+            <div class="star text-center">
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+            </div>
+            <a href="#" class="btn btn-primary btnd ">See More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col ">
+        <div class="card h-100">
+          <div class="card-hover-div">
+            <img src="./images/Gaba-National-Air-Fryer-GN-7522-image1-450x450-removebg-preview.png"
+              class="card-img-top card-hover" alt="...">
+          </div>
+          <div class="card-body" style="text-align: center;">
+            <h5 class="card-title">Gaba National</h5>
+            <p class="card-text">Air Fryer </p>
+            <div class="star text-center">
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+            </div>
+            <a href="#" class="btn btn-primary btnd ">Add To Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col ">
+        <div class="card h-100">
+          <div class="card-hover-div">
+            <img src="./images/Gaba-National-Electric-Tea-Kettle-GN-8607-B.S-450x450-removebg-preview.png"
+              class="card-img-top card-hover" alt="...">
+          </div>
+          <div class="card-body" style="text-align: center;">
+            <h5 class="card-title">Gaba National</h5>
+            <p class="card-text">Electric Tea Kettle</p>
+            <div class="star text-center">
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+            </div>
+            <a href="#" class="btn btn-primary btnd ">See more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--CARD END HERE -->
+  <!--CARD STARTS FROM HERE -->
+  <div class="container py-md-3" data-aos="fade-up" data-aos="fade-up" data-aos-offset="100" data-aos-delay="50"
+    data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false"
+    data-aos-anchor-placement="top-center">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+      <div class="col ">
+        <div class="card h-100">
+          <div class="card-hover-div">
+            <img src="./images/dslr camera.png" class="card-img-top card-hover" alt="...">
+          </div>
+          <div class="card-body" style="text-align: center;">
+            <h5 class="card-title">camera </h5>
+            <p class="card-text">dslr Camera</p>
+            <div class="star text-center">
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+            </div>
+            <a href="#" class="btn btn-primary btnd ">See More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col ">
+        <div class="card h-100">
+          <div class="card-hover-div">
+            <img src="./images/OIP__3_-removebg-preview.png" class="card-img-top card-hover" alt="...">
+          </div>
+          <div class="card-body" style="text-align: center;">
+            <h5 class="card-title">canon</h5>
+            <p class="card-text">camera</p>
+            <div class="star text-center">
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+            </div>
+            <a href="#" class="btn btn-primary btnd ">Shop Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col ">
+        <div class="card h-100">
+          <div class="card-hover-div">
+            <img src="./images/Nikon_announces_the_Z_28-400mm_F4-8_VR__a_superzoom_for_Z-mount-removebg-preview.png"
+              class="card-img-top card-hover" alt="...">
+          </div>
+          <div class="card-body" style="text-align: center;">
+            <h5 class="card-title">Nikon</h5>
+            <p class="card-text">Nikon Lence</p>
+            <div class="star text-center">
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+            </div>
+            <a href="#" class="btn btn-primary btnd ">Shop Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col ">
+        <div class="card h-100">
+          <div class="card-hover-div">
+            <img src="./images/Nikon D7500.png" class="card-img-top card-hover" alt="...">
+          </div>
+          <div class="card-body" style="text-align: center;">
+            <h5 class="card-title">Nikon</h5>
+            <p class="card-text">Nikon D7500</p>
+            <div class="star text-center">
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+              <i class="fa-solid fa-star checked"></i>
+            </div>
+            <a href="#" class="btn btn-primary btnd ">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--CARD END HERE -->
+  <!-- product cards -->
+  <!-- newslater -->
+  <div class="container" id="newslater">
+    <h3 class="text-center">Subscribe To The Libartry Electronic Shop For Latest upload.</h3>
+    <div class="input text-center">
+      <input type="text" placeholder="Enter Your Email..">
+      <button id="subscribe">SUBSCRIBE</button>
+    </div>
+  </div>
+  <!-- newslater -->
+  <!-- footer -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Electronic Shop</h3>
+            <p>
+              Karachi <br>
+              Sindh <br>
+              Pakistan <br>
+            </p>
+            <strong>Phone:</strong> +923102349806 <br>
+            <strong>Email:</strong> libertyelectronicshop@.com <br>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Usefull Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Terms of service</a></li>
+              <li><a href="#">Privacy policey</a></li>
+            </ul>
+          </div>
+
+
+
+
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+
+            <ul>
+              <li><a href="#">PS 5</a></li>
+              <li><a href="#">Computer</a></li>
+              <li><a href="#">Gaming Laptop</a></li>
+              <li><a href="#">Mobile Phone</a></li>
+              <li><a href="#">Gaming Gadget</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Social Networks</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, quibusdam.</p>
+
+            <div class="socail-links mt-3">
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-skype"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="container py-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Liberty Electronic Shop</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="#">Aptech Students ADSE 5to7</a>
+      </div>
+    </div>
+  </footer>
+  <!-- footer -->
+
+
+
+  <!-- MOdal Code Start #1-->
+  <div class="modal fade" id="modal1">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Add To Cart</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./images/OIP-removebg-preview.png" class="img-fluid card-hover" alt="...">
+          <div class="row">
+            <div class="col-6">
+              <p>Washing Machine</p>
+              <div class="star text-start">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+            </div>
+            <div class="col-6 ">
+              <p class="float-end fw-bold"> $799.00</p>
+            </div>
+            <div class="col-12">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, ratione! Iste sit minus cum aut
+                nihil odit, inventore at. Autem molestiae totam numquam beatae ea nisi laborum est facilis dolorum!</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- MOdal Code End -->
+
+  <!-- MOdal Code Start #2-->
+  <div class="modal fade" id="modal2">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Add To Cart</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./images/__86-removebg-preview.png" class="img-fluid card-hover" alt="...">
+          <div class="row">
+            <div class="col-6">
+              <p>Washing Machine</p>
+              <div class="star text-start">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+            </div>
+            <div class="col-6 ">
+              <p class="float-end fw-bold"> $799.00</p>
+            </div>
+            <div class="col-12">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, ratione! Iste sit minus cum aut
+                nihil odit, inventore at. Autem molestiae totam numquam beatae ea nisi laborum est facilis dolorum!</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- MOdal Code End -->
+
+  <!-- MOdal Code Start #3-->
+  <div class="modal fade" id="first">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Add To Cart</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./images/j.png" class="img-fluid card-hover" alt="...">
+          <div class="row">
+            <div class="col-6">
+              <p>Washing Machine</p>
+              <div class="star text-start">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+            </div>
+            <div class="col-6 ">
+              <p class="float-end fw-bold"> $799.00</p>
+            </div>
+            <div class="col-12">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, ratione! Iste sit minus cum aut
+                nihil odit, inventore at. Autem molestiae totam numquam beatae ea nisi laborum est facilis dolorum!</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- MOdal Code End -->
+
+  <!-- MOdal Code Start #4-->
+  <div class="modal fade" id="second">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Add To Cart</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./images/21.png" class="img-fluid card-hover" alt="...">
+          <div class="row">
+            <div class="col-6">
+              <p>Washing Machine</p>
+              <div class="star text-start">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+            </div>
+            <div class="col-6 ">
+              <p class="float-end fw-bold"> $799.00</p>
+            </div>
+            <div class="col-12">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, ratione! Iste sit minus cum aut
+                nihil odit, inventore at. Autem molestiae totam numquam beatae ea nisi laborum est facilis dolorum!</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- MOdal Code End -->
+
+
+
+
+  <a href="#" class="arrow"><i><img src="./images/arrow.png" alt=""></i></a>
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
